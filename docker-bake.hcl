@@ -3,7 +3,7 @@ variable "REGISTRY" {
 }
 
 variable "REGISTRY_USER" {
-    default = "ashleykza"
+    default = "broadgesture"
 }
 
 variable "APP" {
@@ -15,7 +15,7 @@ variable "RELEASE" {
 }
 
 variable "CU_VERSION" {
-    default = "121"
+    default = "126"
 }
 
 variable "BASE_IMAGE_REPOSITORY" {
@@ -27,7 +27,7 @@ variable "BASE_IMAGE_VERSION" {
 }
 
 variable "PYTHON_VERSION" {
-    default = "3.10"
+    default = "3.12"
 }
 
 target "default" {
@@ -46,9 +46,9 @@ target "default" {
         INVOKEAI_TORCH_VERSION = "2.2.2+cu${CU_VERSION}"
         INVOKEAI_XFORMERS_VERSION = "0.0.25.post1"
 
-        COMFYUI_COMMIT = "a178e25912b01abf436eba1cfaab316ba02d272d"
+        COMFYUI_COMMIT = "ca8efab79fa19bc9745b4f7346d38a49ba1b1b7c"
         COMFYUI_TORCH_VERSION = "2.4.0+cu${CU_VERSION}"
-        COMFYUI_XFORMERS_VERSION = "0.0.27.post2"
+        COMFYUI_XFORMERS_VERSION = "0.0.29.post3"
 
         VENV_PATH = "/workspace/venvs/a1111"
     }
